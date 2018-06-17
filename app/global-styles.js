@@ -44,9 +44,9 @@ injectGlobal`
     color: #fff;
     padding: 30px 40px;
     position: relative;
-    backgroundColor: #5a78f0;
     border-radius: 6px;
     cursor: pointer;
+    margin: 30px 15px 0
   }
 
   .card-colored:hover {

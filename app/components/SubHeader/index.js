@@ -39,15 +39,16 @@ function SubHeader(props) {
 
   const noWalletSubHeader = [
     <Row key="0">
-      <Col xs={2} sm={4} md={6} lg={8} xl={6}></Col>
-      <Col xs={20} sm={16} md={12} lg={8} xl={6}>
+    
+    <Col xs={{span: 20, push: 2}}  sm={{span: 20, push: 2}}  md={{span: 10, push: 2}}  lg={{span: 9, push: 3}}  xl={{span: 6, push: 6}}>
         <div role="button" key="new_wallet" onClick={onGenerateWallet} className="card-colored" style={{ backgroundColor: '#5a78f0' }}>
           <h2 style={{ color: 'white', fontSize: 24 }}>Get a Free Wallet</h2>
           <p>To obtain ETH address and generate your private key. Saving and safekeeping the key will be your responsibility.</p>
           <p className="bold">Get Started   <Icon type="arrow-right" /></p>
         </div>
       </Col>
-      <Col xs={20} sm={16} md={12} lg={8} xl={6} style={{ marginLeft: 30 }}>
+
+      <Col xs={{span: 20, push: 2}}  sm={{span: 20, push: 2}}  md={{span: 10, push: 2}}  lg={{span: 9, push: 3}}  xl={{span: 6, push: 6}}>
         <div role="button" key="restore_wallet" onClick={onShowRestoreWallet} className="card-colored" style={{ backgroundColor: '#05c0a5' }}>
           <h2 style={{ color: 'white', fontSize: 24 }}>Access My Wallet</h2>
           <p>To send Ethereum and tokens, swap coins, sale the domain, deploy the contract after you access your wallet.</p>
@@ -55,7 +56,6 @@ function SubHeader(props) {
         </div>
       </Col>
 
-      <Col xs={2} sm={4} md={6} lg={8} xl={6}></Col>
     </Row>
     /* optional laod / save buttons
      <IconButton
