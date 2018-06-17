@@ -1,0 +1,9 @@
+{
+  "name": "ETH Wallet",
+  "theme_color": "#f8f8f8",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "splash_pages": null
+}
