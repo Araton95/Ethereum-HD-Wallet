@@ -70,4 +70,22 @@ injectGlobal`
     margin-top: 15px;
     font-size: 16px;
   }
+
+  .ant-table-content .ant-table-thead tr th ,
+  .ant-table-content .ant-table-tbody tr td {
+    text-align: center
+  }
+
+  .ant-table-content .ant-table-thead tr th i {
+    margin-left: 5px
+  }
+
+  .ant-table-content .ant-table-tbody tr td:last-child a {
+    display: block;
+    text-align: center;
+    background-color: #1990ff;
+    padding: 6px 0;
+    color: white;
+    border-radius: 4px;
+  }
 `;

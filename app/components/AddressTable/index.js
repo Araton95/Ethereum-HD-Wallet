@@ -183,7 +183,6 @@ function AddressTable(props) {
         filterReset: 'Reset',
         emptyText: 'No Data',
       }}
-
     >
       <Column
         title="#"
@@ -211,26 +210,12 @@ function AddressTable(props) {
         className="columnCenter"
         colSpan="1"
         rowSpan="3"
-        /*
-        render={(text, record) => {
-          const obj = {
-            children: text,
-            props: {},
-          };
-          if (record.token !== 'eth') {
-            // obj.props.rowSpan = 0;
-            obj.children = '~';
-          } else {
-            // obj.props.rowSpan = 3;
-          }
-          return obj;
-        }} */
       />
       <Column
         title="Token"
         dataIndex="token"
         key="token"
-        width="65px"
+        width="55px"
         className="columnCenter"
       />
       <Column
@@ -238,11 +223,6 @@ function AddressTable(props) {
         dataIndex="balance"
         key="balance"
         width="80px"
-        filters={[{
-          text: 'Remove empty',
-          value: '0 ETH',
-        }]}
-        onFilter={(value, record) => record.balance !== value}
       />
       <Column
         title={<CurrencyDropdown {...currencyDropdownProps} />}
@@ -254,13 +234,9 @@ function AddressTable(props) {
         width="65px"
         title="Action"
         key="action"
-        render={(text, record) => (
+        render={(record) => (
           <span>
-            {/* <a href="#" >Show QR</a>
-            <span className="ant-divider" /> */}
-            {/* eslint-disable */}
-            <a onClick={() => onShowSendToken(record.address,record.token)}>Send</a>
-            {/* eslint-enable */}
+            <a onClick={() => onShowSendToken(record.address, record.token)}>Send</a>
           </span>
         )}
       />

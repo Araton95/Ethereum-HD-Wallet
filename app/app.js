@@ -19,6 +19,9 @@ import 'sanitize.css/sanitize.css';
 // Import root app
 import App from 'containers/App';
 
+// Load crypto/tokens icons
+import '!file-loader?name=token-icons/[name].[ext]!./images/token-icons/eth.png';
+
 // Load the manifest.json file and the .htaccess file
 /* eslint-disable import/no-unresolved, import/extensions */
 import '!file-loader?name=[name].[ext]!./manifest.json';
